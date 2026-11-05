@@ -5,13 +5,13 @@
 class Gc < Formula
   desc "GitCode CLI - Command line tool for GitCode"
   homepage "https://gitcode.com/atomgit-cli/cli"
-  version "0.15.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atomgit-cli/cli/releases/download/v0.15.0/gc_0.15.0_darwin_amd64.tar.gz"
-      sha256 "c0ff9d5ac140a5ccc0303880a416faabbe37f6a058248a4fb1b7104bc1085b47"
+      url "https://github.com/atomgit-cli/cli/releases/download/v0.16.0/gc_0.16.0_darwin_amd64.tar.gz"
+      sha256 "c0a7febb549626ea2b103334d32f09670e299b9f71afc0ffa3447766202928b6"
 
       define_method(:install) do
         bin.install "gc"
@@ -22,8 +22,8 @@ class Gc < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/atomgit-cli/cli/releases/download/v0.15.0/gc_0.15.0_darwin_arm64.tar.gz"
-      sha256 "1d73ad36e9831817beba930e898792574ebe5402c9c6ad6f41c71228a8545ade"
+      url "https://github.com/atomgit-cli/cli/releases/download/v0.16.0/gc_0.16.0_darwin_arm64.tar.gz"
+      sha256 "7ff31fcc3316e46f60507273b68e9f2e9d189bdacc59fbe70699e388db6ff097"
 
       define_method(:install) do
         bin.install "gc"
@@ -37,8 +37,8 @@ class Gc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atomgit-cli/cli/releases/download/v0.15.0/gc_0.15.0_linux_amd64.tar.gz"
-      sha256 "85d239f89f18d49f7780c49b950b8b6376553240b48c54e849e4ccbf76f5b88d"
+      url "https://github.com/atomgit-cli/cli/releases/download/v0.16.0/gc_0.16.0_linux_amd64.tar.gz"
+      sha256 "939c4286f993be41306f879e57bf36457df6c5e4fa4390e1ff7d6d446eae928b"
       define_method(:install) do
         bin.install "gc"
         bin.install_symlink "gc" => "gitcode"
@@ -48,8 +48,8 @@ class Gc < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atomgit-cli/cli/releases/download/v0.15.0/gc_0.15.0_linux_arm64.tar.gz"
-      sha256 "6ec72c5ceadefc4da4423a9157c9372fb29a2ced72dfb8ef65b0afd4e446b8c1"
+      url "https://github.com/atomgit-cli/cli/releases/download/v0.16.0/gc_0.16.0_linux_arm64.tar.gz"
+      sha256 "790fa1ed0739b40f0a0b471fcf987212f8090869248174a6643201df76085172"
       define_method(:install) do
         bin.install "gc"
         bin.install_symlink "gc" => "gitcode"
